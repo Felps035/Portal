@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal M</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="C:\Users\jhonathan.silva\Documents\projeto\assents\icon-multi.png" type="image/x-icon">
+</head>
+<body>
+    <header class="navbar">
+        <a href="#" onclick="window.location.reload(); return false;">
+            <img src="C:\Users\jhonathan.silva\Documents\projeto\assents\logo-branca.png" alt="Logo" class="logo">
+        </a>
+        <div class="profile-info">
+            <i class="fas fa-user-circle"></i>
+            <span id="username">Usuário</span>
+        </div>
+        <a href="#" class="logout-btn" onclick="logout()">
+            <i class="fas fa-sign-out-alt"></i> Logout
+        </a>
+    </header>
+
+    <main>
+        <section>
+            <h1>Bem-vindo ao Portal</h1>
+            <p>Escolha uma área para começar:</p>
+        </section>
+
+        <!-- Displays e informações -->
+        <section class="tech-displays">
+            <a href="#" class="tech-display" onclick="showLogin('C:/Users/jhonathan.silva/Documents/projeto/TI/ti.html')">
+                <h2><i class="fas fa-laptop"></i> Tecnologia da Informação <i class="fas fa-laptop"></i></h2>
+                <p>Conheça a equipe que gerencia nossa infraestrutura de TI e garante que todos os sistemas estejam funcionando perfeitamente.</p>
+            </a>
+            <a href="#" class="tech-display" onclick="showLogin('C:/Users/jhonathan.silva/Documents/projeto/portal/revista.html')">
+                <h2><i class="fas fa-shield-alt"></i> Portal RV <i class="fas fa-shield-alt"></i></h2>
+                <p>Descubra mais sobre o time responsável pela segurança e vigilância das nossas instalações.</p>
+            </a>
+            <a href="#" class="tech-display" onclick="showLogin('C:/Users/jhonathan.silva/Documents/projeto/controledeusuarios/usuarios.html')">
+                <h2><i class="fas fa-users"></i> Controle de Usuários <i class="fas fa-users"></i></h2>
+                <p>Gerencie os acessos e permissões dos usuários no sistema para garantir a integridade e segurança das informações.</p>
+            </a>
+        </section>
+    </main>  
+
+    <script src="script.js"></script>
+</body>
+<footer>
+    &copy; 2024 MULTI. Todos os direitos reservados.
+</footer>
+</html>
